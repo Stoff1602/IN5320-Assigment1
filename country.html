@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Country Searcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="country.js"></script>
+  </head>
+  <body class="country-body">
+    <div >
+      <!-- Navigation -->
+
+      <header class="header">
+        <h2 class="logo">KAB</h2>
+        <!-- <img src="#" alt="Bilde av meg" class="" /> -->
+        <nav class="main-nav">
+          <ul class="main-nav-list">
+            <li class="main-nav-link" href="#">
+              <a href="index.html" class="main-nav-link">About me</a>
+            </li>
+            <li class="main-nav-link">
+              <a href="country.html" class="main-nav-link">Country searcher</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- FORM SECTION -->
+      <div class="container grid form">
+        <div>
+          <input
+            type="text"
+            name="country"
+            id="countryInput"
+            placeholder="Country"
+            required
+          />
+          <button type="button" onclick="addCountry()" class="addButton" id="addButton">Add</button>
+          <input
+            type="text"
+            name="searchCountry"
+            id="searchCountry"
+            placeholder="Search"
+            class="searchInput"
+            oninput="displayFilteredCountries()"
+          />
+          <!-- <div id="errorCountry"></div>           -->
+        <div class="out-country">
+          <ul id="countryList" class="country-ul">      
+          </ul>
+        </div>
+        </div>
+
+        </div>
+      </div>
+      </div>
+    </div>
+  </body>
+</html>
